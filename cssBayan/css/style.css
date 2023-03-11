@@ -25,6 +25,10 @@ body {
     background: #252525;
     border-radius: 1rem;
     box-shadow: 0.3rem 0.3rem 1rem 0.1rem rgb(117 76 254 / 10%);
+    transition: all 0.5s;
+}
+
+.mem-name {
     color: #252525;
     transition: all 0.5s;
 }
@@ -76,21 +80,27 @@ img {
     transition: all 0.5s;
 }
 
-.accordion:hover .icon{
-    opacity: 1;
-}
-
-
-.accordion-item__input:checked ~ label .icon,
+.accordion-item__input:checked ~ label .icon, 
 .accordion-item:hover .icon{
-    opacity: 1;
     transform: rotate(45deg);
 }
 
-.accordion-item__input:checked ~ .accordion,
-.accordion-item:hover{
+.accordion-item:hover .icon,
+.accordion:hover .icon {
+    opacity: 1;
+}
+
+.accordion:hover .mem-name{
     color: white;
 }
+
+.accordion-item__input:checked ~ label .mem-name {
+    color: white;
+}
+
+/* .accordion-item__input:checked ~ label .accordion{
+    color: white;
+} */
 
 
 .accordion-item__input:checked ~ label img,
