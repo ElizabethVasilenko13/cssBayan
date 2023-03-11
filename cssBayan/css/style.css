@@ -15,13 +15,13 @@ body {
 
 h1 {
     color: #FF68C0;
-    font-size: 2.2rem;
+    font-size: 1.5rem;
     text-shadow: 0.1rem 0.2rem 0.6rem rgba(217, 87, 206, 0.8);
 }
 
 .container {
     text-align: center;
-    max-width: 50%;
+    max-width: 80%;
     margin: 0 auto;
 }
 
@@ -77,7 +77,7 @@ img {
 }
 
 .icon {
-    opacity: 0;
+    opacity: 1;
     background-image: url('/cssBayan/cssBayan/assets/icons/arrow.svg');
     background-repeat: no-repeat; 
     background-position: center center;
@@ -87,39 +87,28 @@ img {
     transition: all 0.5s;
 }
 
-.accordion-item__input:checked ~ label .icon, 
-.accordion-item:hover .icon{
+.accordion-item__input:checked ~ label .icon{
     transform: rotate(45deg);
 }
 
-.accordion-item:hover .icon,
-.accordion:hover .icon {
-    opacity: 1;
-}
-
-.accordion:hover .mem-name{
-    color: white;
-}
+.mem-name {
+    color: #252525;
+    font-size: 0.9rem;
+    font-weight: 700;
+} 
 
 .accordion-item__input:checked ~ label .mem-name {
     color: white;
 }
 
-.accordion-item__input:checked ~ label img,
-.accordion-item:hover img {
-    width: 60%;
-    height: 60%;
+.accordion-item__input:checked ~ label img {
+    width: 80%;
+    height: 80%;
 }
 
-.accordion-item__input:checked ~ .accordion-item__img,
-.accordion-item:hover .accordion-item__img {
-    margin-top: 1rem;
-    padding: 1rem 1rem;
-}
-
-.mem-name {
-    font-size: 1.2rem;
-    font-weight: 700;
+.accordion-item__input:checked ~ .accordion-item__img {
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.5rem;
 }
 
 .accordion-item__header,
