@@ -1,0 +1,29 @@
+@media (max-width: 768px) {
+    .container {
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .mem-name {
+        font-size: 0.9rem;
+    }
+
+    .icon {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 667px) {
+    .accordion-item__input:checked ~ label img {
+        width: 80%;
+        height: 80%;
+    }
+
+    .accordion-item__input:checked ~ .accordion-item__img {
+        margin-top: 0.5rem;
+        padding: 0.5rem 0.5rem;
+    }
+}
