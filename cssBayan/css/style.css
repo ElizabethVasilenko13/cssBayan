@@ -35,6 +35,9 @@ h1 {
 }
 
 .mem-name {
+    display: block;
+    margin-right: 0.5rem;
+    text-align: left;
     color: #252525;
     transition: all 0.5s;
 }
@@ -113,7 +116,8 @@ img {
 
 .accordion-item__header,
 img, 
-.icon {
+.icon,
+label {
     cursor: pointer;
 }
 
