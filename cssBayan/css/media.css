@@ -1,0 +1,65 @@
+@media (hover: hover) {
+    .accordion-item:hover .accordion-item__img {
+        margin-top: 1rem;
+        padding: 1rem 1rem;
+    }
+
+    .accordion-item:hover .icon{
+        transform: rotate(45deg);
+    }
+
+    .accordion-item:hover img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .accordion-item:hover .icon,
+    .accordion:hover .icon {
+        opacity: 1;
+    }
+    
+    .accordion:hover .mem-name{
+        color: white;
+    }
+}
+
+@media (min-width: 821px) {
+
+    .accordion-item__input:checked ~ .accordion-item__img {
+        margin-top: 1rem;
+        padding: 1rem 1rem;
+    }
+
+    .icon {
+        opacity: 0;
+    }  
+
+
+    .accordion-item__input:checked ~ label img{
+        width: 60%;
+        height: 60%;
+    }
+
+    .container {
+        max-width: 50%;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .mem-name {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .mem-name {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+}

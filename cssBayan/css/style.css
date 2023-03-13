@@ -1,0 +1,125 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62,5%;
+    background-color: #343434;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+h1 {
+    color: #FF68C0;
+    font-size: 1.5rem;
+    text-shadow: 0.1rem 0.2rem 0.6rem rgba(217, 87, 206, 0.8);
+}
+
+.container {
+    text-align: center;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.accordion {
+    padding: 1rem 1rem 0.5rem 1rem;
+    margin-top: 1rem;
+    background: #252525;
+    border-radius: 1rem;
+    box-shadow: 0.3rem 0.3rem 1rem 0.1rem rgb(117 76 254 / 10%);
+    transition: all 0.5s;
+}
+
+.mem-name {
+    display: block;
+    margin-right: 0.5rem;
+    text-align: left;
+    color: #252525;
+    transition: all 0.5s;
+}
+
+.accordion-item {
+    margin-bottom: 0.5rem;
+}
+
+.accordion-item__img {
+    margin-top: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s;
+    background: #754cfe58;
+    border-radius: 0.5rem;
+    transition: all 0.5s;
+}
+
+img {
+    width: 0;
+    height: 0;
+    transition: all 0.5s;
+    border-radius: 1rem;
+}
+
+.accordion-item__header {
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(127.04deg, #FF68C0 9.06%, #774CFE 97.79%);
+    padding: 0.5rem 0.5rem;
+    transition: all 5s;
+}
+
+.icon {
+    opacity: 1;
+    background-image: url('/cssBayan/cssBayan/assets/icons/arrow.svg');
+    background-repeat: no-repeat; 
+    background-position: center center;
+    width: 1rem; 
+    height: 1rem;
+    background-size: 1rem 1rem;
+    transition: all 0.5s;
+}
+
+.accordion-item__input:checked ~ label .icon{
+    transform: rotate(45deg);
+}
+
+.accordion-item__input:checked ~ .accordion-item__header {
+    background: rgb(11,236,233);
+    background: linear-gradient(90deg, rgba(11,236,233,1) 0%, rgba(239,0,255,1) 100%);
+}
+
+
+.mem-name {
+    color: #252525;
+    font-size: 0.9rem;
+    font-weight: 700;
+} 
+
+.accordion-item__input:checked ~ label .mem-name {
+    color: white;
+}
+
+.accordion-item__input:checked ~ label img {
+    width: 80%;
+    height: 80%;
+}
+
+.accordion-item__input:checked ~ .accordion-item__img {
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.5rem;
+}
+
+img, 
+.icon,
+label {
+    cursor: pointer;
+}
+
+
